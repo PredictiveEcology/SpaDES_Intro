@@ -2,7 +2,7 @@
 title       : Getting started with SpaDES
 description : This chapter introduces the SpaDES package for simulation modelling in R.
 
---- type:NormalExercise lang:r xp:50 skills:1
+--- type:NormalExercise lang:r xp:50 skills:1 key:5ebcc6f8f3
 ## Install SpaDES and its dependencies
 
 Before we begin, we need to ensure we have installed the latest development version of the `SpaDES` package.
