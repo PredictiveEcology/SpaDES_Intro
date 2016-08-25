@@ -3,7 +3,7 @@ instructors      :
  - eliot.mcintire@nrcan.gc.ca
  - alex.chubaty@gmail.com
 university       : Natural Resources Canada, Pacific Forestry Centre
-description      : Introduction to simluation modelling using the SpaDES package for R
+description      : Introduction to simluation modelling using the `SpaDES` package for R
 programming_language: r
 difficulty_level : 2
 time_needed      : 1 hour

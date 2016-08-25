@@ -11,7 +11,7 @@ This course assumes good familiarity with R as well as several of its contribute
 
     a. Fire – Beacons
     b. Vegetation simulation – SpaDES-Landis
-    c. Agent models – Wolves
+    c. Agent models – [Wolves](http://htmlpreview.github.io/?https://github.com/PredictiveEcology/SpaDES-modules/blob/master/modules/wolfAlps/wolfAlps.html)
 
 2. Building a new module from scratch
 
@@ -26,15 +26,15 @@ This course assumes good familiarity with R as well as several of its contribute
 
 3. Modules types
 
-    a. events (e.g., Fire)
-    b. data modules (e.g., climate data downloading)
+    a. events (*e.g.*, Fire)
+    b. data modules (*e.g.*, climate data downloading)
     c. individual-based modules (*e.g.*, caribou)
 
 4. Experiments and replication
 
     a. `experiment` function (replication, scenario creation, parameter experiments)
     b. running parallel simulations on supercomputers and clusters
-    c. Pattern Oriented Modeling (POM function) for estimating unknown parameters
+    c. Pattern Oriented Modeling (`POM` function) for estimating unknown parameters
 
 5. Power R for speed
 
