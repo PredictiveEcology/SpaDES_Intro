@@ -28,12 +28,10 @@ Note that `SpaDES` requires R version `3.2.2` or greater.
 *** =solution
 ```{r}
 # install the SpaDES package from CRAN
-dir.create("~/R")
-.libPaths("~/R")
-install.packages("SpaDES", repos = "http://cloud.r-project.org/")
+#install.packages("SpaDES")
 
 # determine the SpaDES package version from CRAN
-packageVersion("SpaDES")
+#packageVersion("SpaDES")
 ```
 
 *** =sct
