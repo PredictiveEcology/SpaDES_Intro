@@ -1,30 +1,66 @@
-# DataCamp Template Course
-<a href=https://www.datacamp.com//teach/repositories/66513617/go target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/course_button.png" width="150"></a>
-<a href=https://www.datacamp.com//teach/repositories target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/dashboard_button.png" width="150"></a>
+# SpaDES Intro
 
-This an automatically generated <a href=https://www.datacamp.com target="_blank">DataCamp</a> course. You can start from these template files to create your own course.
+<a href=https://www.datacamp.com/teach/repositories/66513617/go target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/course_button.png" width="150"></a>
+<a href=https://www.datacamp.com/teach/repositories target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/dashboard_button.png" width="150"></a>
 
-Changes you make to this GitHub repository are automatically reflected in the linked DataCamp course. This means that you can enjoy all the advantages of version control, collaboration, issue handling ... of GitHub.
+This course assumes good familiarity with R as well as several of its contributed packages.
 
-## Workflow
+## Course Outline
 
-1. Edit the markdown and yml files in this repository. You can use GitHub's online editor or use <a href=https://git-scm.com/ target="_blank">git</a> locally and push your changes.
-2. Check out your build attempts on the <a href=https://www.datacamp.com//teach/repositories target="_blank">Teach Dashboard</a>.
-3. Check out your automatically updated <a href=https://www.datacamp.com/teach/repositories/66513617/go target="_blank">course on DataCamp</a>
+1. What is `SpaDES` and examples
 
-## Getting Started
+    a. Fire – Beacons
+    b. Vegetation simulation – SpaDES-Landis
+    c. Agent models – Wolves
 
-A DataCamp course consists of two types of files:
+2. Building a new module from scratch
 
-- `course.yml`, a <a href=http://docs.ansible.com/ansible/YAMLSyntax.html target="_blank">YAML-formatted file</a> that's prepopulated with some general course information.
-- `chapterX.md`, a markdown file with:
-   - a YAML header containing chapter information.
-   - markdown chunks representing DataCamp Exercises.
+    a. create new module template: `newModule`
+    b. the event queue
+    c. initializing simulations: `simInit` and the `simList` object
+    d. scheduling events: `scheduleEvent`
+    e. running simulations: `spades`
+    f. module metadata
+    g. initializing data
+    h. visualizing
 
-To learn more about the structure of a DataCamp course, check out the <a href=https://www.datacamp.com//teach/documentation#tab_course_structure target="_blank">documentation</a>.
+3. Modules types
 
-Every DataCamp exercise consists of different parts, read up about them <a href=https://www.datacamp.com//teach/documentation#tab_code_exercises target="_blank">here</a>. A very important part about DataCamp exercises is to provide automated personalized feedback to students. In R, these so-called Submission Correctness Tests (SCTs) are written with the <a href=https://github.com/datacamp/testwhat target="_blank">`testwhat`</a> package. SCTs for Python exercises are coded up with <a href=https://github.com/datacamp/pythonwhat target="_blank">`pythonwhat`</a>. Check out the GitHub repositories' wiki pages for more information and examples.
+    a. events (e.g., Fire)
+    b. data modules (e.g., climate data downloading)
+    c. individual-based modules (*e.g.*, caribou)
 
-Want to learn more? Check out the <a href=https://www.datacamp.com//teach/documentation target="_blank">documentation</a> on teaching at DataCamp.
+4. Experiments and replication
 
-*Happy teaching!*
+    a. `experiment` function (replication, scenario creation, parameter experiments)
+    b. running parallel simulations on supercomputers and clusters
+    c. Pattern Oriented Modeling (POM function) for estimating unknown parameters
+
+5. Power R for speed
+
+    a. Spatial data (`raster` and `sp` packages)
+    b. Matrices (for fast operations on numerics)
+    c. `data.table` (for fast operations on `data.frames`, *i.e.*, columns of data)
+
+6. Integrating across modules
+
+    a. Building "models", *i.e.*, groups of modules
+
+7. Online
+
+    a. Using [GitHub.com](https://github.com)
+    b. Using the `shiny` package for web interfaces (still in alpha state)
+    c. Hosting `shiny` apps using [Shinyapps.io](http://www.shinyapps.io/) (*e.g.*, [Proof of concept](https://spades.shinyapps.io/ForestChange_ProofOfConcept/))
+    d. Data sources
+
+8. Data to decisions
+
+    a. Building a reproducible workflow
+    b. Caching
+
+## Resources:
+
+- [SpaDES wiki](https://github.com/PredictiveEcology/SpaDES/wiki)
+- [R documentation for `SpaDES`](http://www.rdocumentation.org/packages/SpaDES/versions/1.2.0)
+- [Development release of `SpaDES`](https://github.com/PredictiveEcology/SpaDES/tree/development)
+

@@ -1,7 +1,9 @@
 title            : SpaDES Intro
 instructors      :
  - eliot.mcintire@nrcan.gc.ca
-description      : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
-university       : DataCamp
+ - alex.chubaty@gmail.com
+university       : Natural Resources Canada, Pacific Forestry Centre
+description      : Introduction to simluation modelling using the SpaDES package for R
+programming_language: r
 difficulty_level : 2
 time_needed      : 1 hour
