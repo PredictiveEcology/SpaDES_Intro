@@ -28,7 +28,9 @@ Note that `SpaDES` requires R version `3.2.2` or greater.
 *** =solution
 ```{r}
 # install the SpaDES package from CRAN
-install.packages("SpaDES")
+dir.create("~/R")
+.libPaths("~/R")
+install.packages("SpaDES", repos = "https://cloud.r-project.org/")
 
 # determine the SpaDES package version from CRAN
 packageVersion("SpaDES")
